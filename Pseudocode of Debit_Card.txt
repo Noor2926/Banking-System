@@ -1,0 +1,35 @@
+CREATE a sub class Debit_Card 
+ DO
+  DECLARE instance variable pin_Number with int data type
+  DECLARE instance variable withdrawal_Amount with int data type
+  DECLARE instance variable date_of_Withdrawal with String data type
+  DECLARE instance variable has_Withdrawal with boolean data type
+CREATE a constructor Debit_Card with six parameters card_Id,client_Name,issure_Bank,bank_Account,balance_Amount,pin_Number having datatype int,String,String,String,double,int respectively
+ DO
+  CALL the constructor from parent class Bank_Card with parameters
+  CALL the mutator setclient_Name with parameter
+  ASSIGN the value of instance variable pin_Number from parameter pin_Number
+  ASSIGN the value of instance variable has_Withdrawn to false
+ END DO
+CREATE an accessor method getPin_Number with int return data type
+ DO
+  RETURN the value of instance variable pin_Number from parameter pin_Number
+ END DO
+CREATE an accessor method getWithdrawal_Amount with int return data type
+ DO
+  RETURN the value of instance variable withdrawal_Amount from parameter withdrawal_Amount
+ END DO
+CREATE an accessor method getDate_of_withdrawal with String return data type
+ DO
+  RETURN the value of instance variable Date_of_Withdrawal from parameter Date_of_Withdrawn
+ END DO
+CREATE an accessor method getHas_withdrawn with boolean return data type
+ DO
+  RETURN the value of instance variable has_Withdrawn from parameter has_Withdrawn
+ END DO
+CREATE a mutator method setWithdrawal_Amount with void return data type with parameter withdrawal_Amount
+ DO
+  ASSIGN the new value to instance variable withdrawal_Amount from parameter withdrawal_Amount
+ END DO
+CREATE method Withdrawn with the parameters pin_Number,withdrawal_Amount,date_of_Withdrawal having data type int,int,String respectively
+ 

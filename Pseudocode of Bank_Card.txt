@@ -1,0 +1,55 @@
+CREATE  parent class Bank_Card
+ DO
+   DECLARE instance variable card_Id with int data type
+   DECLARE instance variable client_Name with string data type
+   DECLARE instance variable issure_Bank with string data type
+   DECLARE instance variable bank_Account with String data type 
+   DECLARE instance variable balance_Ammount with double data type 
+CREATE a constructor Bank_Card with four parameters card_Id,issure_Bank,bank_Account,balance_Amount having datatype int,String,String,double respectively
+ DO
+   ASSIGN the value of instance variable card_Id from parameter card_Id
+   ASSIGN the value of instance variable client_Name as "empty"
+   ASSIGN the value of instance variable issure_Bank from parameter issure_Bank
+   ASSIGN the value of instance variable bank_Account from parameter bank_Account
+   ASSIGN the value of instance variable balance_Amount from parameter balance_Amount
+ END DO
+CREATE an accessor method getcard_Id with int return data type
+ DO
+  RETURN the value of instance variable card_Id from parameter card_Id
+ END DO
+CREATE an accessor method getclient_Name with String return data type
+ DO
+  RETURN the value of instance variable client_Name from parameter client_Name
+ END DO
+CREATE an accessor method getIssure_Bank with String return data type
+ DO
+  RETURN the value of instance variable issure_Bank from parameter issure_Bank
+ END DO
+CREATE an accessor method getBank_Account with String return data type
+ DO
+  RETURN the value of instance variable bank_Account from parameter bank_Account
+ END DO
+CREATE an accessor method getBalance_Ammount with double return data type
+ DO
+  RETURN the value of instance variable balance_Amount from parameter balance_Amount
+ END
+CREATE a mutator method setclient_Name with void return data type with parameter client_Name
+ DO
+ASSIGN the new value to instance variable client_Name from parameter client_Name
+ END DO
+CREATE a mutator method setBalance_Amount with void return data type with parameter balance_Amount
+ DO
+  ASSIGN the new value to instance variable balance_Amount from parameter balance_Amount
+ END DO
+CREATE a display method with void return data type
+ DO
+  PRINT the text "Card ID is " and the value of instance variable card_Id
+  PRINT the text "Issure Bank is " and the value of instance variable issure_Bank
+  PRINT the text "Bank account number is " and the value of instance variable bank_Account
+  PRINT the text "Account balance is " and the value of instance variable balance_Amount
+ IF (client_Name == "")
+  PRINT the text "Please enter your name "
+ ELSE
+  PRINT the text "Your Name is" and the value of instance variable client_Name
+ END IF
+  
